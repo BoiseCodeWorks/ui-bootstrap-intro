@@ -1,0 +1,27 @@
+<html ng-app="stuffNThings">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UI-Bootstrap Intro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="MainController">
+
+    <uib-carousel>
+        <uib-slide ng-repeat="pic in pics">
+            <img ng-src="{{pic.url}}" style="margin:auto;">
+            <div class="carousel-caption">
+                <h4>{{pic.title}}</h4>
+            </div>
+        </uib-slide>
+    </uib-carousel>
+
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.1.2.js"></script>
+    <script src="app/app.js"></script>
+
+</body>
+
+</html>
